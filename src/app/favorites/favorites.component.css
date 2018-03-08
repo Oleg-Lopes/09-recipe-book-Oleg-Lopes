@@ -5,3 +5,7 @@
 h2 {
   display: inline-block;
 }
+
+.main-div {
+  cursor: pointer;
+}
