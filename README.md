@@ -1,3 +1,3 @@
 # RecipeBook
 
-oleglopes.chas.academy/recipe-book/
+http://oleglopes.chas.academy/recipe-book/
