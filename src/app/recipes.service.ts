@@ -23,7 +23,7 @@ export class RecipesService {
       .get(
         "https://api.edamam.com/search?q=" +
           this.input +
-          "&app_id=3ad1c80b&app_key=80efc3328ee9b1b06b148f8fecfb8138&from=0&to=16"
+          "&app_id=afce4894&app_key=59d326ef485c23643512fd46521405bc&from=0&to=16"
       )
       .subscribe((res: Response) => {
         const api = res.json();
