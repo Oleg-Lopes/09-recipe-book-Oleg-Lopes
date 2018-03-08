@@ -1,0 +1,16 @@
+<div class="head">
+  <button (click)="goToRecipes()">&crarr; Search new recipes</button>
+  <h1>Favorite Recipes</h1>
+  <hr>
+</div>
+
+<div class="main-div">
+  <div class="recipes">
+    <div (click)="openFavorite(favorite)" class="recipe" *ngFor="let favorite of favorites">
+      <h2>{{favorite.label}}</h2>
+      <button (click)="deleteFavorite(favorite)">Delete Favorite</button>
+      <img class="recipeImg" src="{{favorite.image}}">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

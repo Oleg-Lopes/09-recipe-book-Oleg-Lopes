@@ -1,0 +1,14 @@
+<div class="mainDiv">
+  <div class="curRecipe" *ngFor="let recipe of currentRecipe">
+    <button (click)="goToRecipes()">&crarr; Back to recipes</button>
+    <button (click)="goToFavorites()">Favorites</button>
+    <h1>{{recipe.label}}</h1>
+    <img src="{{recipe.image}}">
+    <p>{{recipe.calories | number: '1.0-0'}} kcal</p>
+    <p class="ingredients">{{recipe.ingredientLines}}</p>
+    <p *ngFor="let healthLabel of recipe.healthLabels">{{healthLabel}}</p>
+    <button id="btn-add-fav" (click)="addFavorite(recipe)">Add Favorite</button>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>

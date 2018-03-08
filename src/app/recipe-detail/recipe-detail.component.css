@@ -1,0 +1,12 @@
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.ingredients {
+    width: 600px;
+}
+
+.disabled {
+    display: none;
+}

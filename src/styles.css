@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.recipe {
+  width: 350px;
+  padding: 15px;
+}
+
+.recipeImg {
+  width: 300px;
+}
