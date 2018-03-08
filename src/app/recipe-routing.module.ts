@@ -10,8 +10,8 @@ const routes: Routes = [
   { path: "favorites/:label", component: FavoriteDetailComponent },
   { path: "recipes", component: RecipesComponent },
   { path: "recipes/:label", component: RecipeDetailComponent },
-  { path: "", redirectTo: "/recipe", pathMatch: "full" },
-  { path: "**", redirectTo: "/recipe", pathMatch: "full" }
+  { path: "", redirectTo: "/recipes", pathMatch: "full" },
+  { path: "**", redirectTo: "/recipes", pathMatch: "full" }
 ];
 
 @NgModule({
